@@ -260,6 +260,21 @@ body {
   border-left: 5px solid var(--gold);
 }
 
+.menu-pdf-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: var(--gold);
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.menu-pdf-btn:hover {
+  background: #fff;
+}
+
 
 /* ALLERGENE */
 .allergene-box {
