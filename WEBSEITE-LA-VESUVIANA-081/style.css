@@ -678,6 +678,8 @@ body {
   .hero h2,
   .section-header h2 {
     font-size: 36px;
+    line-height: 1.2;
+    max-width: 100%;
   }
 
   .hero-small,
@@ -691,6 +693,16 @@ body {
 
   .hero-buttons {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .page-link,
+  .nav-btn {
+    width: 90%;
+    max-width: 340px;
+    text-align: center;
   }
 
   .hero-logo,
@@ -722,6 +734,12 @@ body {
     width: 100%;
     justify-content: center;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
 }
 
 /* SOCIAL BUTTONS */
