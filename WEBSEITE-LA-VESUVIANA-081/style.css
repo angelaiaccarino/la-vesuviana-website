@@ -370,7 +370,41 @@ body {
 }
 
 .uber-btn i {
-  font-size: 18px;
+  font-size: 14px;
+}
+
+/* WOLT BUTTON */
+
+.wolt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 20px;
+
+  padding: 14px 24px;
+
+  background: #4cb8e0;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+.wolt-btn:hover {
+  transform: translateY(-2px);
+
+  background: #4cb8e0;
+}
+
+.wolt-btn i {
+  font-size: 14px;
 }
 
 /* GALERIE */
