@@ -407,6 +407,40 @@ body {
   font-size: 14px;
 }
 
+/* LIEFERANDO BUTTON */
+
+.lieferando-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 20px;
+
+  padding: 14px 24px;
+
+  background: #ed8536;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  border-radius: 6px;
+
+  transition: 0.3s;
+}
+
+.lieferando-btn:hover {
+  transform: translateY(-2px);
+
+  background: #ed8536;
+}
+
+.lieferando-btn i {
+  font-size: 14px;
+}
+
 /* GALERIE */
 
 
