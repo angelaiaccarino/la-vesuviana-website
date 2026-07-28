@@ -15,17 +15,23 @@ function showPage(pageId) {
 
   if (selectedPage) {
     selectedPage.classList.add("active");
+
+    // URL aktualisieren
+    window.history.replaceState(null, "", `#${pageId}`);
+
+    // Direkt zum gewählten Bereich scrollen
+    setTimeout(() => {
+      selectedPage.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }, 50);
   }
 
   navButtons.forEach((button) => {
     if (button.dataset.page === pageId) {
       button.classList.add("active");
     }
-  });
-
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
   });
 }
 
