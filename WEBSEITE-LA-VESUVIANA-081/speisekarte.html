@@ -2,203 +2,115 @@
 <html lang="de">
 
 <head>
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
   <title>Speisekarte | La Vesuviana 081 by Battista</title>
 
   <meta name="description"
-        content="Speisekarte von La Vesuviana 081 by Battista in München – Deutsch oder Englisch auswählen.">
+        content="Speisekarte von La Vesuviana 081 by Battista – Deutsch oder Englisch auswählen.">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
     rel="stylesheet">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <link rel="stylesheet" href="style.css">
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 30px 20px;
-
-      background: #111;
-      color: #fff;
-
-      font-family: "Lato", sans-serif;
-    }
-
-    .language-container {
-      width: 100%;
-      max-width: 520px;
-      text-align: center;
-    }
-
-    .logo {
-      width: 190px;
-      max-width: 60%;
-      height: auto;
-      margin-bottom: 25px;
-    }
-
-    .subtitle {
-      font-family: "Great Vibes", cursive;
-      font-size: 30px;
-      margin: 0 0 5px;
-    }
-
-    h1 {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 42px;
-      font-weight: 600;
-      margin: 0 0 15px;
-    }
-
-    .description {
-      color: #ccc;
-      line-height: 1.6;
-      margin-bottom: 35px;
-    }
-
-    .menu-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-
-      width: 100%;
-      padding: 20px;
-      margin: 15px 0;
-
-      background: #fff;
-      color: #111;
-
-      border-radius: 8px;
-      text-decoration: none;
-
-      font-family: "Cormorant Garamond", serif;
-      font-size: 23px;
-      font-weight: 600;
-
-      transition: 0.2s ease;
-    }
-
-    .menu-button:hover {
-      transform: translateY(-2px);
-      background: #e8e8e8;
-    }
-
-    .flag {
-      font-size: 25px;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 30px;
-
-      color: #aaa;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .back-link:hover {
-      color: #fff;
-    }
-
-    .restaurant-name {
-      margin-top: 35px;
-      font-family: "Cormorant Garamond", serif;
-      color: #888;
-      font-size: 15px;
-      letter-spacing: 1px;
-    }
-
-    @media (max-width: 600px) {
-
-      h1 {
-        font-size: 35px;
-      }
-
-      .subtitle {
-        font-size: 27px;
-      }
-
-      .menu-button {
-        font-size: 21px;
-        padding: 18px;
-      }
-
-      .logo {
-        width: 160px;
-      }
-    }
-  </style>
 </head>
 
 
 <body>
 
-  <main class="language-container">
+  <main class="menu-language-page">
 
-    <img
-      src="logo1.svg"
-      alt="La Vesuviana 081 by Battista"
-      class="logo">
+    <div class="menu-language-box">
 
-    <p class="subtitle">Il nostro menù</p>
+      <!-- LOGO -->
 
-    <h1>Speisekarte</h1>
-
-    <p class="description">
-      Bitte wählen Sie Ihre Sprache.<br>
-      Please select your language.
-    </p>
+      <img
+        src="logo1.svg"
+        alt="La Vesuviana 081 by Battista"
+        class="menu-language-logo">
 
 
-    <!-- DEUTSCH -->
-
-    <a
-      href="speisekarte-de.pdf?v=20260820"
-      target="_blank"
-      class="menu-button">
-
-      <span class="flag">🇩🇪</span>
-
-      Speisekarte Deutsch
-
-    </a>
+      <p class="menu-language-small">
+        Il nostro menù
+      </p>
 
 
-    <!-- ENGLISCH -->
-
-    <a
-      href="speisekarte-en.pdf?v=20260820"
-      target="_blank"
-      class="menu-button">
-
-      <span class="flag">🇬🇧</span>
-
-      Menu English
-
-    </a>
+      <h1>Speisekarte</h1>
 
 
-    <a href="/" class="back-link">
-      ← Zurück zur Webseite
-    </a>
+      <p class="menu-language-description">
+
+        Bitte wählen Sie Ihre Sprache.<br>
+
+        Please select your language.
+
+      </p>
 
 
-    <p class="restaurant-name">
-      LA VESUVIANA 081 BY BATTISTA · MÜNCHEN
-    </p>
+      <!-- DEUTSCH -->
+
+      <a
+        href="speisekarte-de.pdf?v=20260820"
+        target="_blank"
+        class="language-button">
+
+        <span class="language-flag">
+          🇩🇪
+        </span>
+
+        Speisekarte Deutsch
+
+      </a>
+
+
+      <!-- ENGLISCH -->
+
+      <a
+        href="speisekarte-en.pdf?v=20260820"
+        target="_blank"
+        class="language-button">
+
+        <span class="language-flag">
+          🇬🇧
+        </span>
+
+        Menu English
+
+      </a>
+
+
+      <!-- ZUR WEBSEITE -->
+
+      <a
+        href="/"
+        class="menu-home-link">
+
+        ← Zurück zur Webseite
+
+      </a>
+
+
+      <div class="menu-language-footer">
+
+        LA VESUVIANA 081 BY BATTISTA<br>
+        MÜNCHEN
+
+      </div>
+
+    </div>
 
   </main>
 

@@ -851,3 +851,146 @@ body {
     font-size: 16px;
   }
 }
+
+/*QR-CODE SPEISEKARTE / SPRACHAUSWAHL */
+
+.menu-language-page {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.menu-language-box {
+  width: 100%;
+  max-width: 520px;
+  background: var(--white);
+  text-align: center;
+  padding: 45px 35px;
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.menu-language-logo {
+  width: 180px;
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.menu-language-small {
+  font-family: "Great Vibes", cursive;
+  font-size: 34px;
+  color: var(--red);
+  margin-bottom: 5px;
+}
+
+.menu-language-box h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.menu-language-description {
+  font-size: 17px;
+  color: var(--gray);
+  margin-bottom: 35px;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 17px 20px;
+  margin: 15px 0;
+
+  background: var(--black);
+  color: var(--white);
+
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.language-button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.language-flag {
+  font-size: 24px;
+}
+
+.menu-home-link {
+  display: inline-block;
+  margin-top: 25px;
+
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+}
+
+.menu-home-link:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.menu-language-footer {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+
+  font-family: "Cormorant Garamond", serif;
+  color: var(--gray);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+
+/* HANDY */
+
+@media (max-width: 600px) {
+
+  .menu-language-page {
+    padding: 20px 15px;
+  }
+
+  .menu-language-box {
+    padding: 35px 20px;
+  }
+
+  .menu-language-logo {
+    width: 150px;
+  }
+
+  .menu-language-small {
+    font-size: 30px;
+  }
+
+  .menu-language-box h1 {
+    font-size: 38px;
+  }
+
+  .menu-language-description {
+    font-size: 16px;
+  }
+
+  .language-button {
+    padding: 17px 15px;
+    font-size: 20px;
+  }
+}
