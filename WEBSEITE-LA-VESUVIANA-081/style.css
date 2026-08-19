@@ -195,62 +195,6 @@ body {
   font-size: 18px;
 }
 
-/* SPEISEKARTE */
-.menu-category {
-  max-width: 1050px;
-  margin: 0 auto 45px;
-  background: var(--white);
-  padding: 30px;
-  border-radius: 4px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
-
-.menu-category h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
-  color: var(--red);
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 10px;
-}
-
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  padding: 18px 0;
-  border-bottom: 1px solid #eee;
-}
-
-.menu-item:last-child {
-  border-bottom: none;
-}
-
-.menu-item h4 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
-  color: var(--black);
-}
-
-.menu-item p {
-  color: var(--gray);
-  margin-top: 4px;
-}
-
-.menu-item small {
-  display: block;
-  margin-top: 6px;
-  color: var(--green);
-  font-size: 13px;
-}
-
-.menu-item span {
-  white-space: nowrap;
-  font-weight: 700;
-  color: var(--red);
-  font-size: 18px;
-}
-
 .menu-note {
   max-width: 1050px;
   margin: -20px auto 45px;
