@@ -447,43 +447,190 @@ body {
 
 }
 
-/* KONTAKT */
+/* Kontakt */
+
 .contact-grid {
-  max-width: 1050px;
+  max-width: 1200px;
   margin: 0 auto;
+
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+  /* Adresse | Kontakt | Öffnungszeiten */
+  grid-template-columns: 0.8fr 0.8fr 1.6fr;
+
   gap: 25px;
+  align-items: start;
 }
 
-.contact-card {
+
+/* Kontakt-Karten */
+
+.contact-card1,
+.contact-card2,
+.contact-card3 {
   background: var(--white);
-  padding: 28px;
+
+  text-align: center;
+
+  padding: 35px 25px;
+
   border-top: 4px solid var(--gold);
+  border-bottom: 4px solid var(--gold);
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
-.contact-card h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
-  color: var(--red);
-  margin-bottom: 12px;
+
+/* Adresse und Kontakt etwas kürzer */
+
+.contact-card1,
+.contact-card2 {
+  padding: 22px 25px;
+  align-self: start;
 }
 
-.contact-card a {
+
+/* Überschriften */
+
+.contact-card1 h3,
+.contact-card2 h3,
+.contact-card3 h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
   color: var(--red);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+
+/* Links*/
+
+.contact-card1 a,
+.contact-card2 a,
+.contact-card3 a {
+  color: var(--black);
   text-decoration: none;
 }
 
-.map-box {
-  max-width: 1050px;
-  margin: 35px auto 0;
-  height: 300px;
-  background: #ddd;
+
+/* ADRESSE & KONTAKT */
+
+.contact-card1 p,
+.contact-card2 p {
+  text-align: center;
+
+  padding: 5px 0;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+/* ÖFFNUNGSZEITEN */
+
+/* Sommer und Winter nebeneinander */
+
+.zeiten-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #555;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+/* Beide Bereiche gleich breit */
+
+.sommerzeit,
+.winterzeit {
+  flex: 1;
+
+  min-width: 0;
+
+  text-align: left;
+}
+
+
+/* Überschriften Sommer / Winter */
+
+.sommerzeit h4,
+.winterzeit h4 {
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+
+/* Öffnungszeiten */
+
+.sommerzeit p,
+.winterzeit p {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.contact-card3 h5 {
+  font-size: 16px;
+  color: var(--red);
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* TABLET / HANDY */
+
+@media (max-width: 900px) {
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card1,
+  .contact-card2,
+  .contact-card3 {
+    width: 100%;
+  }
+
+}
+
+
+/* Auf kleinen Handys Sommer/Winter untereinander */
+
+@media (max-width: 600px) {
+
+  .zeiten-container {
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .sommerzeit,
+  .winterzeit {
+    width: 100%;
+  }
+
+  .contact-card1 h3,
+  .contact-card2 h3,
+  .contact-card3 h3 {
+    font-size: 38px;
+  }
+
+}
+
+/* GOOGLE MAPS */
+
+.map-box {
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 40px auto 0;
+  overflow: hidden;
+}
+
+.map-box iframe {
+  display: block;
+  width: 100% !important;
+  max-width: none !important;
+  height: 400px !important;
+  border: 0 !important;
 }
 
 /* FOOTER */
@@ -550,7 +697,7 @@ body {
   color: var(--gold);
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  
+
 }
 
 /* RESPONSIVE */
@@ -1005,6 +1152,7 @@ body {
     font-size: 20px;
   }
 }
+
 /* Sprachauswahl */
 
 .language-switcher {
