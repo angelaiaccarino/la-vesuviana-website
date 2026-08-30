@@ -3,15 +3,15 @@
 
 <head>
 
-    <!-- COOKIEBOT -->
+  <!-- COOKIEBOT -->
 
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="afaca309-3baf-40ed-9cbe-bd9ccb0b836e"
-      data-blockingmode="auto" type="text/javascript">
-      </script>
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="afaca309-3baf-40ed-9cbe-bd9ccb0b836e"
+    data-blockingmode="auto" type="text/javascript">
+    </script>
 
-    <!-- SEO / JSON-LD -->
+  <!-- SEO / JSON-LD -->
 
-    <script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
@@ -51,30 +51,30 @@
 }
 </script>
 
-    <meta property="og:title" content="La Vesuviana 081 by Battista">
-    <meta property="og:description" content="Authentische Cucina Napoletana in München.">
-    <meta property="og:image" content="https://lavesuviana081.de/logo1.svg">
-    <meta property="og:url" content="https://lavesuviana081.de">
-    <meta property="og:type" content="website">
+  <meta property="og:title" content="La Vesuviana 081 by Battista">
+  <meta property="og:description" content="Authentische Cucina Napoletana in München.">
+  <meta property="og:image" content="https://lavesuviana081.de/logo1.svg">
+  <meta property="og:url" content="https://lavesuviana081.de">
+  <meta property="og:type" content="website">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>La Vesuviana 081 by Battista | Cucina Napoletana Pizza & Pinsa in München</title>
+  <title>La Vesuviana 081 by Battista | Cucina Napoletana Pizza & Pinsa in München</title>
 
-    <meta name="description"
-      content="La Vesuviana 081 by Battista in München. Neapolitanische Pizza, Pinsa, Pasta, Antipasti, Panini, Burger und italienische Spezialitäten in München Sendling.">
+  <meta name="description"
+    content="La Vesuviana 081 by Battista in München. Neapolitanische Pizza, Pinsa, Pasta, Antipasti, Panini, Burger und italienische Spezialitäten in München Sendling.">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="script.js" defer></script>
-  </head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
 
 <body>
 
@@ -91,13 +91,20 @@
       </div>
     </div>
 
+    <!-- SPRACHE -->
+    <div class="language-switcher">
+      <button class="lang-btn active" data-lang="de">DE</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <!-- NAVIGATION -->
     <nav class="main-nav">
-      <button class="nav-btn active" data-page="start">Start</button>
-      <button class="nav-btn" data-page="ueber-uns">Über uns</button>
-      <button class="nav-btn" data-page="speisekarte">Speisekarte</button>
-      <button class="nav-btn" data-page="bestellung">Bestellung</button>
-      <button class="nav-btn" data-page="galerie">Galerie</button>
-      <button class="nav-btn" data-page="kontakt">Kontakt</button>
+      <button class="nav-btn active" data-page="start" data-i18n="navHome">Start</button>
+      <button class="nav-btn" data-page="ueber-uns" data-i18n="navAbout">Über uns</button>
+      <button class="nav-btn" data-page="speisekarte" data-i18n="navMenu">Speisekarte</button>
+      <button class="nav-btn" data-page="bestellung" data-i18n="navOrder">Bestellung</button>
+      <button class="nav-btn" data-page="galerie" data-i18n="navGallery">Galerie</button>
+      <button class="nav-btn" data-page="kontakt" data-i18n="navContact">Kontakt</button>
     </nav>
 
   </header>
@@ -110,28 +117,42 @@
     <section class="page active" id="start">
 
       <div class="hero">
-        <div class="hero-content">
-          <p class="hero-small">Tradizione. Passione. Napoli.</p>
 
-          <h2>
+        <div class="hero-content">
+
+          <p class="hero-small">
+            Tradizione. Passione. Napoli.
+          </p>
+
+          <h2 data-i18n="heroTitle">
             Echte neapolitanische Küche<br>
             in München
           </h2>
 
-          <p class="hero-text">
+          <p class="hero-text" data-i18n="heroText">
             Pizza, Pinsa, Pasta, Antipasti und italienische Spezialitäten –
             frisch zubereitet mit Leidenschaft und hochwertigen Zutaten.
           </p>
 
           <div class="hero-buttons">
-            <button class="page-link" data-page="speisekarte">Speisekarte ansehen</button>
-            <button class="page-link secondary" data-page="kontakt">Kontakt</button>
+
+            <button class="page-link" data-page="speisekarte" data-i18n="viewMenu">
+              Speisekarte ansehen
+            </button>
+
+            <button class="page-link secondary" data-page="kontakt" data-i18n="contact">
+              Kontakt
+            </button>
+
           </div>
+
         </div>
 
         <div class="hero-image-box">
           <img src="logo2.svg" alt="La Vesuviana 081 by Battista Logo" class="logo-image2">
         </div>
+
+      </div>
 
     </section>
 
@@ -141,25 +162,27 @@
 
       <div class="section-header">
         <p class="section-small">Chi siamo</p>
-        <h2>Über uns</h2>
+        <h2 data-i18n="aboutTitle">Über uns</h2>
       </div>
 
       <div class="text-box">
-        <p>
+
+        <p data-i18n="aboutText1">
           La Vesuviana 081 by Battista steht für authentische neapolitanische Küche
           und echte italienische Gastfreundschaft. Unser Ziel ist es, ein Stück Neapel
           nach München zu bringen.
         </p>
 
-        <p>
+        <p data-i18n="aboutText2">
           Bei uns werden traditionelle Rezepte mit frischen Zutaten und viel Leidenschaft
           zubereitet. Von neapolitanischer Pizza über knusprige Pinsa Romana bis zu Pasta,
           Fischgerichten, Panini und Burgern – jedes Gericht soll ehrlich, frisch und geschmackvoll sein.
         </p>
 
-        <p>
+        <p data-i18n="aboutText3">
           Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen.
         </p>
+
       </div>
 
     </section>
@@ -169,54 +192,64 @@
     <section class="page" id="speisekarte">
 
       <div class="section-header">
+
         <p class="section-small">Il nostro menù</p>
-        <h2>Speisekarte</h2>
-        <a href="speisekarte-de.pdf?v=20260820" target="_blank" class="menu-pdf-btn">
+
+        <h2 data-i18n="menuTitle">Speisekarte</h2>
+
+        <a href="speisekarte-de.pdf?v=20260820" target="_blank" class="menu-pdf-btn" data-i18n="menuGerman">
           Speisekarte auf Deutsch
         </a>
 
-        <a href="speisekarte-en.pdf?v=20260820" target="_blank" class="menu-pdf-btn">
+        <a href="speisekarte-en.pdf?v=20260820" target="_blank" class="menu-pdf-btn" data-i18n="menuEnglish">
           Menu in English
         </a>
-        <p>Alle Preise inkl. gesetzlicher MwSt. Irrtümer und Änderungen vorbehalten.</p>
+
+        <p data-i18n="menuNotice">
+          Alle Preise inkl. gesetzlicher MwSt. Irrtümer und Änderungen vorbehalten.
+        </p>
+
       </div>
 
-      <!-- ALLERGENE UND ZUSATZSTOFFE -->
+
+      <!-- ALLERGENE -->
       <div class="allergene-box">
-        <h3>Allergene</h3>
+
+        <h3 data-i18n="allergens">Allergene</h3>
 
         <ul>
-          <li><strong>GI</strong> = Glutenhaltiges Getreide / Weizen</li>
-          <li><strong>Ei</strong> = Eier</li>
-          <li><strong>MI</strong> = Milch und Laktose</li>
-          <li><strong>Se</strong> = Sesam</li>
-          <li><strong>So</strong> = Soja</li>
-          <li><strong>Kr</strong> = Krebstiere</li>
-          <li><strong>Fi</strong> = Fisch</li>
-          <li><strong>Lu</strong> = Lupinen</li>
-          <li><strong>Sc</strong> = Schalenfrüchte (Nüsse)</li>
-          <li><strong>Wt / We</strong> = Weichtiere (Mollusken)</li>
+          <li><strong>GI</strong> = <span data-i18n="allergenGI">Glutenhaltiges Getreide / Weizen</span></li>
+          <li><strong>Ei</strong> = <span data-i18n="allergenEgg">Eier</span></li>
+          <li><strong>MI</strong> = <span data-i18n="allergenMilk">Milch und Laktose</span></li>
+          <li><strong>Se</strong> = <span data-i18n="allergenSesame">Sesam</span></li>
+          <li><strong>So</strong> = <span data-i18n="allergenSoy">Soja</span></li>
+          <li><strong>Kr</strong> = <span data-i18n="allergenCrustaceans">Krebstiere</span></li>
+          <li><strong>Fi</strong> = <span data-i18n="allergenFish">Fisch</span></li>
+          <li><strong>Lu</strong> = <span data-i18n="allergenLupin">Lupinen</span></li>
+          <li><strong>Sc</strong> = <span data-i18n="allergenNuts">Schalenfrüchte (Nüsse)</span></li>
+          <li><strong>Wt / We</strong> = <span data-i18n="allergenMolluscs">Weichtiere (Mollusken)</span></li>
         </ul>
 
-        <h3>Zusatzstoffe</h3>
+        <h3 data-i18n="additives">Zusatzstoffe</h3>
 
         <ul>
-          <li><strong>1</strong> = Farbstoff</li>
-          <li><strong>2</strong> = Konservierungsstoff</li>
-          <li><strong>3</strong> = Antioxidationsmittel</li>
-          <li><strong>4</strong> = Geschmacksverstärker</li>
-          <li><strong>5</strong> = geschwefelt</li>
-          <li><strong>6</strong> = geschwärzt</li>
-          <li><strong>7</strong> = gewachst</li>
-          <li><strong>8</strong> = Phosphat</li>
-          <li><strong>9</strong> = Süßungsmittel</li>
-          <li><strong>10</strong> = enthält Phenylalaninquelle</li>
+          <li><strong>1</strong> = <span data-i18n="additive1">Farbstoff</span></li>
+          <li><strong>2</strong> = <span data-i18n="additive2">Konservierungsstoff</span></li>
+          <li><strong>3</strong> = <span data-i18n="additive3">Antioxidationsmittel</span></li>
+          <li><strong>4</strong> = <span data-i18n="additive4">Geschmacksverstärker</span></li>
+          <li><strong>5</strong> = <span data-i18n="additive5">geschwefelt</span></li>
+          <li><strong>6</strong> = <span data-i18n="additive6">geschwärzt</span></li>
+          <li><strong>7</strong> = <span data-i18n="additive7">gewachst</span></li>
+          <li><strong>8</strong> = <span data-i18n="additive8">Phosphat</span></li>
+          <li><strong>9</strong> = <span data-i18n="additive9">Süßungsmittel</span></li>
+          <li><strong>10</strong> = <span data-i18n="additive10">enthält Phenylalaninquelle</span></li>
         </ul>
 
-        <p>
+        <p data-i18n="allergenNotice">
           Informationen zu Allergenen und Zusatzstoffen erhalten Sie auf Nachfrage bei unserem Personal.
           Kreuzkontaminationen können nicht vollständig ausgeschlossen werden.
         </p>
+
       </div>
 
     </section>
@@ -227,36 +260,44 @@
 
       <div class="section-header">
         <p class="section-small">Ordina ora</p>
-        <h2>Bestellung</h2>
+        <h2 data-i18n="orderTitle">Bestellung</h2>
       </div>
 
       <div class="text-box">
-        <p>
+
+        <p data-i18n="orderText">
           Sie möchten Essen bestellen oder vorab reservieren? Rufen Sie uns einfach an.
         </p>
 
         <div class="contact-buttons">
-          <a href="tel:+49897853330" class="contact-btn">Jetzt anrufen</a>
 
-          <a href="https://www.ubereats.com/store/la-vesuviana-081-by-battista/lyIp65taWPC4aQrpQs8Z9g?diningMode=PICKUP&ps=1&surfaceName=" target="_blank" class="uber-btn">
+          <a href="tel:+49897853330" class="contact-btn" data-i18n="callNow">
+            Jetzt anrufen
+          </a>
+
+          <a href="https://www.ubereats.com/store/la-vesuviana-081-by-battista/lyIp65taWPC4aQrpQs8Z9g?diningMode=PICKUP&ps=1&surfaceName="
+            target="_blank" class="uber-btn">
 
             <i class="fa-solid fa-bag-shopping"></i>
-            🛵 Jetzt bei Uber Eats bestellen
+            <span data-i18n="uberOrder">🛵 Jetzt bei Uber Eats bestellen</span>
 
           </a>
 
           <a href="" target="_blank" class="wolt-btn">
 
             <i class="fa-solid fa-bag-shopping"></i>
-            🛵 Jetzt bei Wolt bestellen (bald verfügbar)
+            <span data-i18n="woltOrder">🛵 Jetzt bei Wolt bestellen (bald verfügbar)</span>
 
           </a>
 
-          <a href="https://www.lieferando.de/speisekarte/la-vesuviana-081-by-battista" target="_blank" class="lieferando-btn">
-            
+          <a href="https://www.lieferando.de/speisekarte/la-vesuviana-081-by-battista" target="_blank"
+            class="lieferando-btn">
+
             <i class="fa-solid fa-bag-shopping"></i>
-            🛵 Jetzt bei Lieferando bestellen
+            <span data-i18n="lieferandoOrder">🛵 Jetzt bei Lieferando bestellen</span>
+
           </a>
+
         </div>
 
       </div>
@@ -269,7 +310,7 @@
 
       <div class="section-header">
         <p class="section-small">Galleria</p>
-        <h2>Galerie</h2>
+        <h2 data-i18n="galleryTitle">Galerie</h2>
       </div>
 
       <div class="gallery-grid">
@@ -344,32 +385,51 @@
 
       <div class="section-header">
         <p class="section-small">Contatto</p>
-        <h2>Kontakt</h2>
+        <h2 data-i18n="contactTitle">Kontakt</h2>
       </div>
 
       <div class="contact-grid">
 
         <div class="contact-card">
-          <h3>Adresse</h3>
+
+          <h3 data-i18n="address">Adresse</h3>
+
           <p>
             La Vesuviana 081 by Battista<br>
             Boschetsrieder Str. 118<br>
             81379 München
           </p>
+
         </div>
 
+
         <div class="contact-card">
-          <h3>Kontakt</h3>
+
+          <h3 data-i18n="contact">Kontakt</h3>
+
           <p>
-            Telefon: <a href="tel:+49897853330"> 089 7853330</a><br>
-            E-Mail: <a href="mailto:lavesuviana081@gmail.com">lavesuviana081@gmail.com</a>
+            <span data-i18n="phone">Telefon:</span>
+            <a href="tel:+49897853330">089 7853330</a>
+            <br>
+
+            E-Mail:
+            <a href="mailto:lavesuviana081@gmail.com">
+              lavesuviana081@gmail.com
+            </a>
           </p>
+
         </div>
 
+
         <div class="contact-card">
-          <h3>Öffnungszeiten</h3>
-          <h4>Sommerzeit vom 01.06.-31.08</h4>
-          <p>
+
+          <h3 data-i18n="openingHours">Öffnungszeiten</h3>
+
+          <h4 data-i18n="summerHours">
+            Sommerzeit vom 01.06.-31.08
+          </h4>
+
+          <p data-i18n="summerSchedule">
             Montag 10:00 – 22:00 Uhr<br>
             Dienstag 10:00 – 22:00 Uhr<br>
             Mittwoch 10:00 – 22:00 Uhr<br>
@@ -377,10 +437,15 @@
             Freitag 10:00 – 22:00 Uhr<br>
             Samstag Geschlossen<br>
             Sonntag 10:00 – 22:00 Uhr
-          </p><br>
+          </p>
 
-          <h4>Winterzeit vom 01.09.-31.05</h4>
-          <p>
+          <br>
+
+          <h4 data-i18n="winterHours">
+            Winterzeit vom 01.09.-31.05
+          </h4>
+
+          <p data-i18n="winterSchedule">
             Montag 11:00 – 22:00 Uhr<br>
             Dienstag Geschlossen<br>
             Mittwoch 11:00 – 22:00 Uhr<br>
@@ -388,19 +453,27 @@
             Freitag 11:00 – 22:00 Uhr<br>
             Samstag 11:00 – 22:00 Uhr<br>
             Sonntag 11:00 – 22:00 Uhr
-          </p><br>
+          </p>
 
-          <h5>Küche bis 21:30 Uhr</h5>
+          <br>
+
+          <h5 data-i18n="kitchenUntil">
+            Küche bis 21:30 Uhr
+          </h5>
+
         </div>
 
       </div>
 
+
       <div class="map-box">
+
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10658.274210104642!2d11.509007434221727!3d48.0992670721347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd927e42485ad%3A0x3d0545deb4e6f1f1!2sBoschetsrieder%20Str.%20118%2C%2081379%20M%C3%BCnchen!5e0!3m2!1sde!2sde!4v1778973781495!5m2!1sde!2sde"
           width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
+
       </div>
 
     </section>
@@ -410,7 +483,6 @@
 
   <!-- FOOTER -->
   <footer class="site-footer">
-
     <div class="footer-content">
 
       <div class="footer-brand">
@@ -422,32 +494,38 @@
       <div class="footer-info">
         <p>Boschetsrieder Str. 118</p>
         <p>81379 München</p>
-        <p>Telefon: <a href="tel:+49897853330"> 089 7853330</a></p>
-        <p>E-Mail: <a href="mailto:lavesuviana081@gmail.com">lavesuviana081@gmail.com</a></p>
+
+        <p> <span data-i18n="phone">Telefon:</span>
+          <a href="tel:+49897853330">089 7853330</a>
+        </p>
+
+        <p> E-Mail: <a href="mailto:lavesuviana081@gmail.com"> lavesuviana081@gmail.com </a>
+        </p>
+
       </div>
 
       <div class="footer-links">
-        <a href="impressum.html" class="footer-link">Impressum</a>
-        <a href="datenschutz.html" class="footer-link">Datenschutz</a>
-        <a href="https://instagram.com/lavesuviana081" target="_blank" class="social-btn">
+        <a href="impressum.html" class="footer-link" data-i18n="legalNotice"> Impressum </a>
 
-          <i class="fa-brands fa-instagram"></i>
-          Instagram
+        <a href="datenschutz.html" class="footer-link" data-i18n="privacy"> Datenschutz </a>
 
-        </a>
+        <p class="website-credit"> Webdesign & Entwicklung · Angela Iaccarino</p>
 
-        <a href="https://www.tiktok.com/@lavesuviana081" target="_blank" class="social-btn">
+        <a href="https://instagram.com/lavesuviana081" target="_blank" class="social-btn"> <i
+            class="fa-brands fa-instagram"></i> Instagram </a>
 
-          <i class="fa-brands fa-tiktok"></i>
-          TikTok
-
-        </a>
+        <a href="https://www.tiktok.com/@lavesuviana081" target="_blank" class="social-btn"> <i
+            class="fa-brands fa-tiktok"></i> TikTok </a>
       </div>
 
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 La Vesuviana 081 by Battista. Alle Rechte vorbehalten.</p>
+
+      <p data-i18n="copyright">
+        © 2026 La Vesuviana 081 by Battista. Alle Rechte vorbehalten.
+      </p>
+
     </div>
 
   </footer>
