@@ -354,6 +354,9 @@ const translations = {
     menuEnglish:
       "Menu in English",
 
+    menuWeekly:
+      "Weekly Menu",
+
     menuNotice:
       "All prices include statutory VAT. Errors and changes reserved.",
 
@@ -499,6 +502,9 @@ const translations = {
 
     privacy:
       "Privacy Policy",
+
+    websiteCredit:
+      "Webdesign & Development · Angela Iaccarino",
 
     copyright:
       "© 2026 La Vesuviana 081 by Battista. All rights reserved."
