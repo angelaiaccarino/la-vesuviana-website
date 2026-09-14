@@ -989,7 +989,7 @@ body {
   border-bottom-color: var(--gold);
 }
 
-/* MOBILE */
+/* Handy */
 
 @media (max-width: 700px) {
   .legal-page {
