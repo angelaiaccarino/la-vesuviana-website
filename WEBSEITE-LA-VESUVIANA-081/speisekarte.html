@@ -5,31 +5,46 @@
 
   <meta charset="UTF-8">
 
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Speisekarte | La Vesuviana 081 by Battista</title>
 
-  <meta name="description"
-        content="Speisekarte von La Vesuviana 081 by Battista – Deutsch oder Englisch auswählen.">
+  <meta name="description" content="Speisekarte von La Vesuviana 081 by Battista – Deutsch oder Englisch auswählen.">
 
-  <link rel="preconnect"
-        href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Lato:wght@300;400;700&display=swap"
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 
 </head>
 
 
 <body>
+  <!-- Halloween Popup -->
+
+  <div id="flyerPopup" class="flyer-popup">
+
+    <!-- Halloween Hintergrundbild -->
+    <div class="halloween-background"></div>
+
+    <!-- Flyer -->
+    <div class="flyer-popup-content">
+
+      <button id="closeFlyer" class="flyer-close">
+        &times;
+      </button>
+
+      <img src="halloween-flyer.png" alt="Halloween Kürbis-Menü bei La Vesuviana 081">
+
+    </div>
+
+  </div>
 
   <main class="menu-language-page">
 
@@ -37,10 +52,7 @@
 
       <!-- LOGO -->
 
-      <img
-        src="logo2.svg"
-        alt="La Vesuviana 081 by Battista"
-        class="menu-language-logo">
+      <img src="logo2.svg" alt="La Vesuviana 081 by Battista" class="menu-language-logo">
 
 
       <p class="menu-language-small">
@@ -62,10 +74,7 @@
 
       <!-- DEUTSCH -->
 
-      <a
-        href="speisekarte-de.pdf?v=20260914"
-        target="_blank"
-        class="language-button">
+      <a href="speisekarte-de.pdf?v=20260914" target="_blank" class="language-button">
 
         <span class="language-flag">
           🇩🇪
@@ -78,10 +87,7 @@
 
       <!-- ENGLISCH -->
 
-      <a
-        href="speisekarte-en.pdf?v=20260914"
-        target="_blank"
-        class="language-button">
+      <a href="speisekarte-en.pdf?v=20260914" target="_blank" class="language-button">
 
         <span class="language-flag">
           🇬🇧
@@ -92,10 +98,7 @@
       </a>
 
       <!-- Wochenkarte -->
-      <a
-        href="speisekarte-woche.pdf?v=20260921"
-        target="_blank"
-        class="language-button">
+      <a href="speisekarte-woche.pdf?v=20260927" target="_blank" class="language-button">
 
         <span class="language-flag">
           🇬🇧 🇩🇪
@@ -108,9 +111,7 @@
 
       <!-- ZUR WEBSEITE -->
 
-      <a
-        href="/"
-        class="menu-home-link">
+      <a href="/" class="menu-home-link">
 
         ← Zurück zur Webseite
 

@@ -592,3 +592,11 @@ const savedLanguage =
   localStorage.getItem("language") || "de";
 
 changeLanguage(savedLanguage);
+
+// HALLOWEEN FLYER POPUP
+const flyerPopup = document.getElementById("flyerPopup");
+const closeFlyer = document.getElementById("closeFlyer");
+
+closeFlyer.addEventListener("click", function () {
+    flyerPopup.style.display = "none";
+});
