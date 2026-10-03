@@ -105,6 +105,7 @@ const translations = {
     navOrder: "Bestellung",
     navGallery: "Galerie",
     navContact: "Kontakt",
+    navReservation: "Tisch reservieren",
 
     // Start
     heroTitle:
@@ -280,6 +281,12 @@ const translations = {
     kitchenUntil:
       "Küche bis 21:30 Uhr",
 
+    // Reservierung
+    reservationTitle:
+      "Reservierung",
+
+    reservationText:
+      "Sie möchten einen Tisch reservieren? Nutzen Sie unser Online-Reservierungsformular oder rufen Sie uns einfach an.",
 
     // Footer
     legalNotice:
@@ -314,6 +321,9 @@ const translations = {
 
     navContact:
       "Contact",
+
+    navReservation:
+      "Book a Table",
 
 
     // Start
@@ -495,6 +505,13 @@ const translations = {
     kitchenUntil:
       "Kitchen open until 21:30",
 
+    // Reservation
+    reservationTitle:
+      "Reservation",
+
+    reservationText:
+      "Would you like to reserve a table? Use our online reservation form or simply give us a call.",
+
 
     // Footer
     legalNotice:
@@ -594,9 +611,12 @@ const savedLanguage =
 changeLanguage(savedLanguage);
 
 // HALLOWEEN FLYER POPUP
+
 const flyerPopup = document.getElementById("flyerPopup");
 const closeFlyer = document.getElementById("closeFlyer");
 
-closeFlyer.addEventListener("click", function () {
-    flyerPopup.style.display = "none";
-});
+if (flyerPopup && closeFlyer) {
+    closeFlyer.addEventListener("click", function () {
+        flyerPopup.style.display = "none";
+    });
+}

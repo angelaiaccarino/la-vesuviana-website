@@ -79,6 +79,7 @@ body {
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .nav-btn,
@@ -145,6 +146,7 @@ body {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .page-link {
@@ -419,33 +421,6 @@ body {
   transition: 0.4s;
 }
 
-/* Tablet */
-@media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Handy */
-@media (max-width: 600px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* MOBILE */
-
-@media (max-width: 700px) {
-
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-item img {
-    height: 260px;
-  }
-
-}
 
 /* Kontakt */
 
@@ -575,45 +550,6 @@ body {
   text-align: center;
 }
 
-/* TABLET / HANDY */
-
-@media (max-width: 900px) {
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-card1,
-  .contact-card2,
-  .contact-card3 {
-    width: 100%;
-  }
-
-}
-
-
-/* Auf kleinen Handys Sommer/Winter untereinander */
-
-@media (max-width: 600px) {
-
-  .zeiten-container {
-    flex-direction: column;
-
-    gap: 25px;
-  }
-
-  .sommerzeit,
-  .winterzeit {
-    width: 100%;
-  }
-
-  .contact-card1 h3,
-  .contact-card2 h3,
-  .contact-card3 h3 {
-    font-size: 38px;
-  }
-
-}
 
 /* GOOGLE MAPS */
 
@@ -700,8 +636,424 @@ body {
 
 }
 
-/* RESPONSIVE */
+/* SOCIAL BUTTONS */
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 18px;
+
+  background: #111;
+  color: white;
+
+  text-decoration: none;
+
+  border: 1px solid var(--gold);
+
+  transition: 0.3s;
+
+  margin-top: 10px;
+}
+
+.social-btn:hover {
+  background: var(--gold);
+  color: black;
+}
+
+.social-btn i {
+  font-size: 18px;
+}
+
+/* IMPRESSUM & DATENSCHUTZ */
+
+.legal-page {
+  max-width: 950px;
+  margin: 70px auto;
+  padding: 50px;
+  background: #ffffff;
+  color: var(--text);
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.legal-page h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 52px;
+  color: var(--black);
+  margin-bottom: 35px;
+}
+
+.legal-page h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 30px;
+  color: var(--red);
+  margin-top: 35px;
+  margin-bottom: 12px;
+}
+
+.legal-page p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.legal-page a {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+}
+
+.legal-page a:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+
+/*QR-CODE SPEISEKARTE / SPRACHAUSWAHL */
+
+.menu-language-page {
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.menu-language-box {
+  width: 100%;
+  max-width: 520px;
+  background: var(--white);
+  text-align: center;
+  padding: 45px 35px;
+  border-top: 5px solid var(--gold);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+}
+
+.menu-language-logo {
+  width: 180px;
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.menu-language-small {
+  font-family: "Great Vibes", cursive;
+  font-size: 34px;
+  color: var(--red);
+  margin-bottom: 5px;
+}
+
+.menu-language-box h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  color: var(--black);
+  margin-bottom: 15px;
+}
+
+.menu-language-description {
+  font-size: 17px;
+  color: var(--gray);
+  margin-bottom: 35px;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 17px 20px;
+  margin: 15px 0;
+
+  background: var(--black);
+  color: var(--white);
+
+  border: 1px solid var(--gold);
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 22px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.language-button:hover {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.language-flag {
+  font-size: 24px;
+}
+
+.menu-home-link {
+  display: inline-block;
+  margin-top: 25px;
+
+  color: var(--red);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+}
+
+.menu-home-link:hover {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+.menu-language-footer {
+  margin-top: 35px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+
+  font-family: "Cormorant Garamond", serif;
+  color: var(--gray);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Sprachauswahl */
+
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.lang-btn {
+  min-width: 45px;
+  padding: 7px 12px;
+
+  border: 1px solid rgb(197, 157, 95);
+  background: transparent;
+
+  color: white;
+
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: rgb(197, 157, 95);
+  color: #111;
+}
+
+
+/* Beim Navigieren direkt richtig positionieren */
+
+.page {
+  scroll-margin-top: 20px;
+}
+
+
+/* HALLOWEEN FLYER POPUP */
+
+.flyer-popup {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.15);
+
+  overflow: hidden;
+  z-index: 9999;
+
+  animation: popupFade 0.5s ease;
+}
+
+
+/* HALLOWEEN HINTERGRUND */
+
+.halloween-background {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("halloween-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  opacity: 0.60;
+
+  z-index: 1;
+}
+
+
+/* FLYER */
+
+.flyer-popup-content {
+  position: relative;
+
+  z-index: 3;
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  animation: flyerAppear 0.7s ease;
+}
+
+
+.flyer-popup-content img {
+  display: block;
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  border-radius: 8px;
+}
+
+
+/* SCHLIESSEN BUTTON */
+
+.flyer-close {
+  position: absolute;
+
+  top: -15px;
+  right: -15px;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+  color: black;
+
+  font-size: 28px;
+  line-height: 40px;
+
+  cursor: pointer;
+
+  z-index: 5;
+}
+
+
+/* ANIMATIONEN */
+
+@keyframes popupFade {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes flyerAppear {
+
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+
+/* RESERVIERUNG NAV BUTTON STYLES */
+
+.thefork-nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 145px;
+  padding: 7px 18px;
+
+  background: var(--gold);
+  color: var(--black);
+
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+
+  text-decoration: none;
+
+  box-shadow: 0px 4px 10px rgba(201, 164, 92, 0.35);
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reservation-main {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.reservation-provider {
+  margin-top: 3px;
+
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+
+  opacity: 0.7;
+}
+
+.thefork-nav-btn:hover {
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--black);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(201, 164, 92, 0.45);
+}
+
+/* RESPONSIVE – TABLET */
+
 @media (max-width: 900px) {
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card1,
+  .contact-card2,
+  .contact-card3 {
+    width: 100%;
+  }
+
   .site-header {
     flex-direction: column;
     text-align: center;
@@ -734,49 +1086,11 @@ body {
   .allergene-box ul {
     columns: 1;
   }
+
 }
 
-@media (max-width: 600px) {
-  .page {
-    padding: 45px 5%;
-  }
 
-  .logo-text h1 {
-    font-size: 28px;
-  }
-
-  .main-nav {
-    width: 100%;
-  }
-
-  .nav-btn {
-    width: 100%;
-  }
-
-  .hero h2,
-  .section-header h2 {
-    font-size: 34px;
-  }
-
-  .hero-text {
-    font-size: 17px;
-  }
-
-  .menu-category {
-    padding: 22px;
-  }
-
-  .menu-item {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .menu-item span {
-    font-size: 17px;
-  }
-}
-
-/* MOBILE FIX */
+/* RESPONSIVE - Handy*/
 
 @media (max-width: 768px) {
 
@@ -910,88 +1224,31 @@ body {
     height: auto;
   }
 
-}
+  .language-switcher {
+    margin: 12px 0 18px;
+  }
 
-/* SOCIAL BUTTONS */
+  .lang-btn {
+    min-width: 50px;
+    padding: 9px 14px;
+  }
 
-.social-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  .thefork-nav-btn {
+    width: 100%;
+    max-width: 360px;
 
-  padding: 10px 18px;
+    margin: 0 auto;
+    padding: 11px 20px;
+  }
 
-  background: #111;
-  color: white;
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
 
-  text-decoration: none;
+  .gallery-item img {
+    height: 260px;
+  }
 
-  border: 1px solid var(--gold);
-
-  transition: 0.3s;
-
-  margin-top: 10px;
-}
-
-.social-btn:hover {
-  background: var(--gold);
-  color: black;
-}
-
-.social-btn i {
-  font-size: 18px;
-}
-
-/* IMPRESSUM & DATENSCHUTZ */
-
-.legal-page {
-  max-width: 950px;
-  margin: 70px auto;
-  padding: 50px;
-  background: #ffffff;
-  color: var(--text);
-  border-top: 5px solid var(--gold);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
-}
-
-.legal-page h1 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 52px;
-  color: var(--black);
-  margin-bottom: 35px;
-}
-
-.legal-page h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 30px;
-  color: var(--red);
-  margin-top: 35px;
-  margin-bottom: 12px;
-}
-
-.legal-page p {
-  font-size: 17px;
-  line-height: 1.8;
-  margin-bottom: 18px;
-}
-
-.legal-page a {
-  display: inline-block;
-  margin-top: 30px;
-  color: var(--red);
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid var(--red);
-}
-
-.legal-page a:hover {
-  color: var(--gold);
-  border-bottom-color: var(--gold);
-}
-
-/* Handy */
-
-@media (max-width: 700px) {
   .legal-page {
     margin: 30px 15px;
     padding: 30px 22px;
@@ -1008,120 +1265,72 @@ body {
   .legal-page p {
     font-size: 16px;
   }
-}
 
-/*QR-CODE SPEISEKARTE / SPRACHAUSWAHL */
-
-.menu-language-page {
-  min-height: 100vh;
-  background: var(--cream);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-}
-
-.menu-language-box {
-  width: 100%;
-  max-width: 520px;
-  background: var(--white);
-  text-align: center;
-  padding: 45px 35px;
-  border-top: 5px solid var(--gold);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
-}
-
-.menu-language-logo {
-  width: 180px;
-  max-width: 60%;
-  height: auto;
-  margin-bottom: 20px;
-}
-
-.menu-language-small {
-  font-family: "Great Vibes", cursive;
-  font-size: 34px;
-  color: var(--red);
-  margin-bottom: 5px;
-}
-
-.menu-language-box h1 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 48px;
-  color: var(--black);
-  margin-bottom: 15px;
-}
-
-.menu-language-description {
-  font-size: 17px;
-  color: var(--gray);
-  margin-bottom: 35px;
-}
-
-.language-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-
-  width: 100%;
-  padding: 17px 20px;
-  margin: 15px 0;
-
-  background: var(--black);
-  color: var(--white);
-
-  border: 1px solid var(--gold);
-  border-radius: 6px;
-
-  text-decoration: none;
-
-  font-family: "Cormorant Garamond", serif;
-  font-size: 22px;
-  font-weight: 600;
-
-  transition: 0.3s;
-}
-
-.language-button:hover {
-  background: var(--gold);
-  color: var(--black);
-}
-
-.language-flag {
-  font-size: 24px;
-}
-
-.menu-home-link {
-  display: inline-block;
-  margin-top: 25px;
-
-  color: var(--red);
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 1px solid var(--red);
-}
-
-.menu-home-link:hover {
-  color: var(--gold);
-  border-bottom-color: var(--gold);
-}
-
-.menu-language-footer {
-  margin-top: 35px;
-  padding-top: 20px;
-  border-top: 1px solid #ddd;
-
-  font-family: "Cormorant Garamond", serif;
-  color: var(--gray);
-  font-size: 14px;
-  letter-spacing: 1px;
 }
 
 
-/* HANDY */
+/* RESPONSIVE – KLEINE HANDYS */
 
 @media (max-width: 600px) {
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .zeiten-container {
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .sommerzeit,
+  .winterzeit {
+    width: 100%;
+  }
+
+  .contact-card1 h3,
+  .contact-card2 h3,
+  .contact-card3 h3 {
+    font-size: 38px;
+  }
+
+  .page {
+    padding: 45px 5%;
+  }
+
+  .logo-text h1 {
+    font-size: 28px;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  .hero h2,
+  .section-header h2 {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 17px;
+  }
+
+  .menu-category {
+    padding: 22px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu-item span {
+    font-size: 17px;
+  }
 
   .menu-language-page {
     padding: 20px 15px;
@@ -1151,217 +1360,26 @@ body {
     padding: 17px 15px;
     font-size: 20px;
   }
-}
 
-/* Sprachauswahl */
-
-.language-switcher {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin: 15px 0;
-}
-
-.lang-btn {
-  min-width: 45px;
-  padding: 7px 12px;
-
-  border: 1px solid rgb(197, 157, 95);
-  background: transparent;
-
-  color: white;
-
-  font-family: "Lato", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition: 0.3s ease;
-}
-
-.lang-btn:hover,
-.lang-btn.active {
-  background: rgb(197, 157, 95);
-  color: #111;
-}
-
-
-/* Beim Navigieren direkt richtig positionieren */
-
-.page {
-  scroll-margin-top: 20px;
-}
-
-
-/* HANDY */
-
-@media (max-width: 768px) {
-
-  .language-switcher {
-    margin: 12px 0 18px;
+  .flyer-popup-content {
+    max-width: 92vw;
+    max-height: 85vh;
   }
 
-  .lang-btn {
-    min-width: 50px;
-    padding: 9px 14px;
+  .flyer-popup-content img {
+    max-width: 92vw;
+    max-height: 85vh;
   }
 
-}
-/* ==================================
-   HALLOWEEN FLYER POPUP
-   ================================== */
+  .flyer-close {
+    top: -12px;
+    right: -8px;
 
-.flyer-popup {
-    position: fixed;
-    inset: 0;
+    width: 36px;
+    height: 36px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 24px;
+    line-height: 36px;
+  }
 
-    background: rgba(0, 0, 0, 0.15);
-
-    overflow: hidden;
-    z-index: 9999;
-
-    animation: popupFade 0.5s ease;
-}
-
-
-/* ==================================
-   HALLOWEEN HINTERGRUND
-   ================================== */
-
-.halloween-background {
-    position: absolute;
-    inset: 0;
-
-    background-image: url("halloween-background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    opacity: 0.60;
-
-    z-index: 1;
-}
-
-
-/* ==================================
-   FLYER
-   ================================== */
-
-.flyer-popup-content {
-    position: relative;
-
-    z-index: 3;
-
-    max-width: 90vw;
-    max-height: 90vh;
-
-    animation: flyerAppear 0.7s ease;
-}
-
-
-.flyer-popup-content img {
-    display: block;
-
-    max-width: 90vw;
-    max-height: 90vh;
-
-    width: auto;
-    height: auto;
-
-    object-fit: contain;
-
-    border-radius: 8px;
-}
-
-
-/* ==================================
-   SCHLIESSEN BUTTON
-   ================================== */
-
-.flyer-close {
-    position: absolute;
-
-    top: -15px;
-    right: -15px;
-
-    width: 40px;
-    height: 40px;
-
-    border: none;
-    border-radius: 50%;
-
-    background: white;
-    color: black;
-
-    font-size: 28px;
-    line-height: 40px;
-
-    cursor: pointer;
-
-    z-index: 5;
-}
-
-
-/* ==================================
-   ANIMATIONEN
-   ================================== */
-
-@keyframes popupFade {
-
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-@keyframes flyerAppear {
-
-    from {
-        opacity: 0;
-        transform: scale(0.85);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-
-/* ==================================
-   HANDY
-   ================================== */
-
-@media (max-width: 600px) {
-
-    .flyer-popup-content {
-        max-width: 92vw;
-        max-height: 85vh;
-    }
-
-    .flyer-popup-content img {
-        max-width: 92vw;
-        max-height: 85vh;
-    }
-
-    .flyer-close {
-        top: -12px;
-        right: -8px;
-
-        width: 36px;
-        height: 36px;
-
-        font-size: 24px;
-        line-height: 36px;
-    }
 }
